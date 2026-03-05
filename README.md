@@ -1,4 +1,4 @@
-# Proyecto de testing manual para QANOVA
+# Proyecto de testing automatizado para QANOVA
 # Descripción del proyecto
 
 Este proyecto consiste en la creación del flujo completo de pruebas funcionales para la plataforma de QANOVA.El objetivo principal es asegurar la calidad del flujo critico de negocio, como la gestion de usuario.
