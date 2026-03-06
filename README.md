@@ -13,7 +13,7 @@ Herramienta de Automatización Web: Selenium WebDriver
 
 Framework de Comportamiento (BDD): Cucumber
 
-Gestor de Dependencias y Construcción: Maven
+Gestor de Dependencias y Construcción: Gradle
 
 Gestión de pruebas: Excel
 
