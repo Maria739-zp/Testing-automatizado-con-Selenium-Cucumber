@@ -1,7 +1,7 @@
-# Proyecto de testing automatizado para pagina de prueba saucedemo
+# Proyecto de testing automatizado para pagina de prueba Saucedemo
 # Descripción del proyecto
 
-Este proyecto consiste en la creación del flujo completo de pruebas funcionales para la plataforma de practicas de saucedemo.El objetivo principal es asegurar la calidad en los flujos criticos de negocio, como la gestion de usuario.
+Este proyecto consiste en la creación del flujo completo de pruebas funcionales para la plataforma de practicas de Saucedemo.El objetivo principal es asegurar la calidad en los flujos criticos de negocio, como la gestion de usuario.
 
 # Herramientas y tecnologías
 
