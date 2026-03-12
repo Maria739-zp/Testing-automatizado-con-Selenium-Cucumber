@@ -1,1 +1,42 @@
+AUTOR:                   : MARÍA CAROLINA ZERPA
+FECHA:                   :2026-03-12
+SISTEMA:                 :SAUCEDEMO
+INTELIGENCIA ARTIFICIAL  :NO
+
+Plan de pruebas 
+
+Introducción
+El objetivo de este documento es definir la estrategia, los recursos y el alcance de las pruebas funcionales para la plataforma Saucedemo.
+Se busca asegurar que los flujos principales de la aplicación operen correctamente según las expectativas del usuario.
+
+Elementos en el alcance de las pruebas
+•	Módulo de registro y login: validación de creación de usuarios e ingreso al sistema
+
+Elementos fuera del alcance de las pruebas: 
+•	Pruebas de validación de transacción bancaria
+•	Pruebas de seguridad y vulnerabilidades
+•	Pruebas de rendimiento y carga
+
+Estrategia de pruebas
+•	Tipo de prueba: Pruebas de caja negra
+•	Niveles de prueba: Pruebas de sistema
+
+
+Enfoque:
+•	Pruebas positivas: validar que el sistema haga lo que debe realizar con datos validos
+•	Pruebas negativas: validar el comportamiento del sistema cuando se utilizan datos incorrectos o acciones no permitidas
+
+Criterios de aceptación
+Criterios de entrada:
+•	Entorno de prueba se encuentra disponible y estable
+•	Los casos de prueba han sido diseñados y revisados
+Criterios de salida:
+•	El 100% de los casos de prueba críticos se han ejecutado
+•	No existen defectos abiertos con severidad bloqueante 
+
+Entorno de prueba
+•	Hardware: Notebook personal.
+•	Sistema Operativo: Windows 11.
+•	Navegador: Versión 145.0.7632.109 (Compilación oficial) (64 bits)
+•	Herramientas: Excel respaldo y ejecución de casos de pruebas, GitHub para reportes de bugs, lenguaje de programación Java IDE Intellij IDEA, herramienta de automatización web Selenium WebDriver, framework BDD Cucumber, gestor de dependencias Maven
 
