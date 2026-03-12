@@ -38,5 +38,6 @@ Entorno de prueba
 •	Hardware: Notebook personal.
 •	Sistema Operativo: Windows 11.
 •	Navegador: Versión 145.0.7632.109 (Compilación oficial) (64 bits)
-•	Herramientas: Excel respaldo y ejecución de casos de pruebas, GitHub para reportes de bugs, lenguaje de programación Java IDE Intellij IDEA, herramienta de automatización web Selenium WebDriver, framework BDD Cucumber, gestor de dependencias Maven
+•	Herramientas: Excel respaldo y ejecución de casos de pruebas, GitHub para reportes de bugs, lenguaje de programación Java,
+IDE Intellij IDEA, herramienta de automatización web Selenium WebDriver, framework BDD Cucumber, gestor de dependencias Maven
 
