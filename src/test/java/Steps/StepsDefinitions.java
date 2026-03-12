@@ -6,7 +6,7 @@ import pages.LoginPage;
 
 public class StepsDefinitions {
 
-    // 1. Creamos las instancias de tus clases
+    // 1. Creamos las instancias de las clases
     BasePage base = new BasePage();
     LoginPage login;
 
@@ -42,5 +42,6 @@ public class StepsDefinitions {
         base.cierre();
         }
 }
+
 
 
