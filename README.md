@@ -1,7 +1,7 @@
 # Proyecto de testing automatizado para pagina de prueba Saucedemo
 # Descripción del proyecto
 
-Este proyecto consiste en la creación del flujo completo de pruebas funcionales para la plataforma de practicas de Saucedemo.El objetivo principal es asegurar la calidad en los flujos criticos de negocio, como la gestion de usuario.
+Este proyecto consiste en la creación del flujo completo de pruebas funcionales para la plataforma de practicas de Saucedemo.El objetivo principal es asegurar la calidad en los flujos criticos de negocio, como la gestion de usuario, agregar productos al carro de compras.
 
 # Herramientas y tecnologías
 
@@ -36,6 +36,8 @@ Reporte de bugs:  documentación de los errores encontrados
 # Alcance de las pruebas 
 
 Módulo de autenticación: registro de nuevos usuarios y validación de credenciales
+
+Módulo de carro de compras: agregar un articulo al carro de compras
 
 # Resultado y hallazgos
 
