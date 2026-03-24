@@ -1,4 +1,6 @@
+Steps\StepsHome.class
+Steps\StepsDefinition.class
 Pages\LoginPage.class
 Runner\TestRunner.class
 Pages\BasePage.class
-Steps\StepsDefinition.class
+Pages\HomePage.class

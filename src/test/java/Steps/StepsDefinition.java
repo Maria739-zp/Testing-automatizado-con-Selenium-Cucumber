@@ -27,6 +27,7 @@ public class StepsDefinition {
     @And("ingresa contraseña {string}")
     public void ingresarPassword(String password){
         login.ingresarPassword(password);
+        System.out.println("Entre al ingresar contraseña");
     }
 
     @And("hace click en login")

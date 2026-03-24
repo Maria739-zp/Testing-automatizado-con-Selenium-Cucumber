@@ -32,7 +32,7 @@ public class LoginPage extends BasePage {
     }
 
     public void clickElemento(){
-        clickElemento();
+        campoBoton.click();
     }
     /*private String clickElemento = "login-button";
 
