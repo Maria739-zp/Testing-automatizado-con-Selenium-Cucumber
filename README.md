@@ -41,8 +41,8 @@ Módulo de carro de compras: agregar un articulo al carro de compras
 
 # Resultado y hallazgos
 
-Casos ejecutados: 
+Casos ejecutados: 2
 
-Casos exitosos: 
+Casos exitosos: 2
 
 Bugs reportados: 
