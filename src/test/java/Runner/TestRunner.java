@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = {"Steps"},
-        tags = "@Carrito",
+        tags = "@OrdenarListaUsuarioGlitch",
         plugin = {"pretty", "json:target/cucumber.json"}
 )
 public class TestRunner {

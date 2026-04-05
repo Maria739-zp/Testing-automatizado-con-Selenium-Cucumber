@@ -1,7 +1,7 @@
 Feature: iniciar sesion en la pagina web https://www.saucedemo.com/
   Background: Usuario logueado en la página
     Given que el usuario ingresa a "https://www.saucedemo.com/"
-    And ingresa el usuario "standard_user"
+    When ingresa el usuario "standard_user"
     And ingresa contraseña "secret_sauce"
     And hace click en login
 
@@ -13,10 +13,14 @@ Feature: iniciar sesion en la pagina web https://www.saucedemo.com/
     And hace click en login
     Then podrá acceder a la pagina
 
-
 @Carrito
 Scenario: Agregar un producto específico al carrito desde el home
   #Given que el usuario ya ha iniciado sesión y se encuentra en la pagina home
   Given el usuario hace clic en el producto "Sauce Labs Backpack"
   When selecciona la opción para ese producto
   Then el icono del carrito debe mostrar "1" unidad
+
+ @ComboBox
+ Scenario: el usuario selecciona ordenar los productos según opciones del combox
+   Given el usuario ordena los productos por "lohi"
+   Then el primer artículo de la lista debería ser "Sauce Labs Onesie"

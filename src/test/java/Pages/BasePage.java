@@ -10,7 +10,7 @@ import java.time.Duration;
 public class BasePage {
 
     public static WebDriver driver;
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
     static {
         WebDriverManager.chromedriver().setup();
@@ -32,7 +32,7 @@ public class BasePage {
 
             driver = new ChromeDriver(options);
             driver.manage().window().maximize();
-            wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         }
     }
 

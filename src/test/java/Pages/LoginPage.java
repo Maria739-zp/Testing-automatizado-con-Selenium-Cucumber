@@ -1,9 +1,11 @@
 package Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class LoginPage extends BasePage {
 
@@ -21,6 +23,9 @@ public class LoginPage extends BasePage {
     @FindBy(id = "login-button")
     public WebElement campoBoton;
 
+    @FindBy(className = "error-message-container")
+    public WebElement mensajeError;
+
     public void ingresarUsuario(String usuario) {
         campoUsuario.clear();
         campoUsuario.sendKeys(usuario);
@@ -32,12 +37,11 @@ public class LoginPage extends BasePage {
     }
 
     public void clickElemento(){
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("login-button")));
         campoBoton.click();
     }
-    /*private String clickElemento = "login-button";
 
-    @Override
-    public void clickElemento(String localizador) {
-        super.clickElemento(localizador);
-    */
+    public String verificarIngreso(){
+        return mensajeError.getText();
+    }
 }

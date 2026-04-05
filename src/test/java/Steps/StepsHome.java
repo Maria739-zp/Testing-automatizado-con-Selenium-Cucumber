@@ -4,11 +4,14 @@ import Pages.BasePage;
 import Pages.HomePage;
 import Pages.LoginPage;
 import io.cucumber.java.en.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
 
 public class StepsHome extends BasePage {
 
     BasePage base = new BasePage();
-    HomePage home;
+    HomePage home = new HomePage(BasePage.driver);
     LoginPage login;
 
 /*
@@ -49,6 +52,22 @@ public class StepsHome extends BasePage {
         base.cierre();
     }
 
+    // PRUEBA DE DROPDOWN
 
+    @Given("el usuario ordena los productos por {string}")
+    public void selectDeLista(String Value){
 
+        home.selectDelista(Value);
+    }
+
+    @Then("el primer artículo de la lista debería ser {string}")
+    public void verificarLista(String opcionEsperada){
+       String opcionActual = home.nombreLista();
+
+       if (opcionActual.equals(opcionEsperada)){
+           throw new AssertionError("¡Falló! Se esperaba " + opcionEsperada + " pero hay " + opcionActual);
+       }
+        System.out.println("Validación exitosa: El producto está");
+        base.cierre();
+    }
 }

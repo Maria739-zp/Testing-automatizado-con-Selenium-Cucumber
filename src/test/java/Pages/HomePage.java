@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 
 public class HomePage extends BasePage {
 
@@ -19,10 +21,10 @@ public class HomePage extends BasePage {
     @FindBy(className = "shopping_cart_badge")
     public WebElement badgeCarrito;
 
+    @FindBy(className = "product_sort_container")
+    public WebElement comboBox;
+
 //metodos
-
-
-
 
     public void clickProducto(String nombreProducto) {
         String xpathBoton = "//div[text()='" + nombreProducto + "']/ancestor::div[@class='inventory_item_description']//button";
@@ -35,6 +37,19 @@ public class HomePage extends BasePage {
 
     public String obtenerTextoCarrito() {
         return badgeCarrito.getText();
+    }
+
+
+    public void selectDelista(String Value){
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("product_sort_container")));
+
+        Select dropDown = new Select(driver.findElement(By.className("product_sort_container")));
+        dropDown.selectByValue(Value);
+    }
+
+    public String nombreLista(){
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("item_5_title_link")));
+        return comboBox.getText();
     }
 
 }
